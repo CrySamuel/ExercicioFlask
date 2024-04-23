@@ -1,0 +1,14 @@
+<html>
+    <head>
+    <title>Minha Casa</title>
+    </head>
+    <body>
+    <h1>Atuadores</h1>
+    <ul>
+        {% for atuador, valor in atuadores.items() %}
+        <li> {{ atuador }} : {{ valor }} </li>
+        {% endfor %}
+    </ul>
+    <p>Voltar para <a href="/">página inicial</a>!</p>
+    </body>
+    </html>

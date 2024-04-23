@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Room</title>
+    </head>
+    <body>
+        {% block content %} {% endblock %}
+        <ul>
+            {% for key, value in room.items() %}
+            <a href= {{value}} > <li>{{ key }}</li> </a>
+            {% endfor %}
+        </ul>
+        <p>Voltar para <a href="/">página inicial</a>!</p>
+    </body>
+</html>

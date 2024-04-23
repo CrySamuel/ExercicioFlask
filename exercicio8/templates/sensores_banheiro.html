@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Sensores do Banheiro</title>
+    </head>
+    <body>
+        <h1>Sensores</h1>
+        <ul>
+            {% for sensor in sensores_banheiro %}
+            <li> {{ sensor }} </li>
+            {% endfor %}
+        </ul>
+        <p>Voltar para o <a href="/banheiro">banheiro</a>!</p>
+    </body>
+</html>

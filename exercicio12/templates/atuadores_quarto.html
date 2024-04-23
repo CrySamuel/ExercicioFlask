@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Atuadores do Quarto</title>
+    </head>
+    <body>
+        <h1>Atuadores</h1>
+        <ul>
+            {% for atuador in atuadores_quarto%}
+            <li> {{ atuador }} </li>
+            {% endfor %}
+        </ul>
+        <p>Voltar para o <a href="/quarto">quarto</a>!</p>
+    </body>
+</html>

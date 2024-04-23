@@ -1,0 +1,9 @@
+{% extends"base1.html" %}
+{% block content%}
+    <h1>Usuários</h1>
+    <ul>
+        {% for chave, valor in devices.items() %}
+        <li> {{ chave }} : {{ valor }} </li>
+        {% endfor %}
+    </ul>
+{% endblock%}

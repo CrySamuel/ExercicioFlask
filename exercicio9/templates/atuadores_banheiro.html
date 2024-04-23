@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Atuadores do Banheiro</title>
+    </head>
+    <body>
+        <h1>Atuadores</h1>
+        <ul>
+            {% for atuador, value in atuadores_banheiro.items() %}       
+            {% if(value == 0) %}
+            <li>{{atuador}}: desligado</li>
+            {% elif(value == 1) %}
+            <li>{{atuador}}: ligado</li>
+            {% else %}
+            <li>{{atuador}}</li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+        <p>Voltar para o <a href="/banheiro">banheiro</a>!</p>
+    </body>
+</html>

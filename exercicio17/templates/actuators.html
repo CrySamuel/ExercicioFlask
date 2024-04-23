@@ -1,0 +1,11 @@
+{% extends"base1.html" %}
+{% block content %}
+
+    <h1>Atuadores</h1>
+    <ul>
+        {% for atuador, valor in devices.items() %}
+        <li> {{ atuador }} : {{ valor }} </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

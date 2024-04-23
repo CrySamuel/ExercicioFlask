@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Atuadores do Banheiro</title>
+    </head>
+    <body>
+        <h1>Atuadores</h1>
+        <ul>
+            {% for atuador in atuadores_banheiro %}
+            <li> {{ atuador }} </li>
+            {% endfor %}
+        </ul>
+        <p>Voltar para o <a href="/banheiro">banheiro</a>!</p>
+    </body>
+</html>

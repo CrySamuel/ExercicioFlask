@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <title>Casa conectada</title>
+    </head>
+    <body>
+        <h1>CASA CONECTADA</h1>
+        {% for key, value in dados.items() %}
+        <a href= {{value}} > <h1>{{ key }}</h1> </a>
+        {% endfor %}
+    </body>
+</html>

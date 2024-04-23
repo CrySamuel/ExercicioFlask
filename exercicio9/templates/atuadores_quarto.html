@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Atuadores do Quarto</title>
+    </head>
+    <body>
+        <h1>Atuadores</h1>
+        <ul>
+            {% for atuador, value in atuadores_quarto.items() %}       
+            {% if(value == 0) %}
+            <li>{{atuador}}: desligado</li>
+            {% elif(value == 1) %}
+            <li>{{atuador}}: ligado</li>
+            {% else %}
+            <li>{{atuador}}</li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+        <p>Voltar para o <a href="/quarto">quarto</a>!</p>
+    </body>
+</html>

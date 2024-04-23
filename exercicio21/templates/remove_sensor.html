@@ -1,0 +1,13 @@
+<!--remove_sensor.html -->
+<html>
+    <body>
+    <form action="http://localhost:8080/del_sensor" method="post">
+        <select name="sensor" class="Input">
+            {% for key, value in devices.items() %}
+            <option>{{ key }}</option>
+            {% endfor %}
+            <p><input type = "submit" value = "Deletar" /></p>
+        </select>
+    </form>
+    </body>
+</html>
